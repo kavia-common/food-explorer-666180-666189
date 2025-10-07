@@ -1,0 +1,247 @@
+.screen {
+  position: relative;
+  width: 430px;
+  height: 932px;
+  background-color: var(--color-ffffff);
+  border-radius: var(--radius-35);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.foodgo-title {
+  position: absolute;
+  left: 19px;
+  top: 28px;
+  width: 129px;
+  height: 61px;
+}
+
+.subtitle {
+  position: absolute;
+  left: 19px;
+  top: 89px;
+  width: 238px;
+  height: 27px;
+}
+
+.profile-container {
+  position: absolute;
+  left: 351px;
+  top: 28px;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-20);
+  overflow: hidden;
+}
+
+.profile-container img {
+  width: 106px;
+  height: 73px;
+  object-fit: cover;
+  transform: translate(-29px, -3px);
+}
+
+.search-container {
+  position: absolute;
+  left: 19px;
+  top: 163px;
+  width: 319px;
+  height: 60px;
+  background-color: var(--color-ffffff);
+  border-radius: var(--radius-20);
+  box-shadow: var(--shadow-0);
+}
+
+.filter-button {
+  position: absolute;
+  left: 351px;
+  top: 163px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-ef2a39);
+  border-radius: var(--radius-20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.search-group {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.category-scrollbar {
+  position: absolute;
+  left: -1px;
+  top: 264px;
+  width: 412px;
+  height: 50px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.category-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.category-list {
+  display: flex;
+  gap: 14px;
+  padding: 0 19px;
+}
+
+.category-item {
+  padding: 15px 27px;
+  border-radius: var(--radius-20);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.category-item.active {
+  background-color: var(--color-ef2a39);
+  box-shadow: var(--shadow-1);
+}
+
+.category-item.inactive {
+  background-color: var(--color-f3f4f6);
+}
+
+.food-grid {
+  position: absolute;
+  left: 19px;
+  top: 355px;
+  width: 392px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.food-card {
+  width: 185px;
+  height: 225px;
+  background-color: var(--color-ffffff);
+  border-radius: var(--radius-20);
+  box-shadow: var(--shadow-2);
+  position: relative;
+  padding: 15px;
+}
+
+.food-image {
+  width: 120px;
+  height: 121.76px;
+  object-fit: cover;
+  margin: -10px auto 0;
+  display: block;
+}
+
+.food-shadow {
+  width: 91px;
+  height: 11px;
+  background-color: var(--color-000000);
+  opacity: 0.1;
+  border-radius: 50%;
+  margin: 5px auto;
+}
+
+.food-title {
+  margin-top: 10px;
+  text-align: left;
+  white-space: pre-line;
+}
+
+.rating-container {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.star-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.heart-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: -19px;
+  width: 456px;
+  height: 90px;
+  background-color: var(--color-ef2a39);
+}
+
+.nav-icons {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 224px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.add-button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: -36px;
+  width: 72px;
+  height: 72px;
+  background-color: var(--color-ef2a39);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button::before,
+.add-button::after {
+  content: '';
+  position: absolute;
+  background-color: var(--color-ffffff);
+}
+
+.add-button::before {
+  width: 16px;
+  height: 5px;
+}
+
+.add-button::after {
+  width: 5px;
+  height: 16px;
+}
